@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+<body>
+    <h1>hello</h1>
+
+
+    <script type="text/javascript">
+        // let i = 10, 
+        //     a = 20;
+        
+        // alert(i);
+        // let age = confirm('Are u 18?');
+        // //Проверка возраста клиента, хотя он может соврать :)
+        // if (age == false) {
+        //     alert('You are less 18');
+        // } else {
+        //     alert('You are welcome!');
+        // }
+        // //Создание переменной имя
+        // let name = prompt("Enter Your name");
+
+        // //Проверка на пустое значение
+        // while (name == '' || name == null || name == undefined) {
+        //     alert('Enter your name correctly');
+        //     name = prompt("Enter Your name");
+        // }
+        
+        // alert(`Hello ${name}`);
+        // //Вывод от 11 до 33, с шагом 1
+        // for (let b = 11; b <= 33; b++) {
+        //     console.log(b);
+        // };
+
+
+        // let num = 11;
+        // while (num <= 33) {
+        //     console.log(num);
+        //     num++;
+        // }
+
+        // do {
+        //     i--;
+        //     console.log(i);
+        // } while (i > 8);
+
+        // //Создание массива 
+        // let array = [1, 2, 3, 4, 5];
+        // //Вывод третьего элемента 
+        // alert(array[2]);
+
+
+        // let elements = new Array(83, 2, 90, 34, 56, 12, 51, 321, 32132);
+        // let max = elements[0]; // Максимальный изначально 1 элемент
+        // for (let i = 0; i < elements.length; i++) {
+        //     if(elements[i] > max) {
+        //         max = elements[i];
+        //     }
+        // }
+        // alert("Максимум: " + max);
+
+        // let x = [[1, 2, 3, 5], [6, 7, 8, 9]];
+        // alert(x[0][1]);// Вывод второго элемента в первом массиве: 2
+
+
+        function checkAge (age) {
+            if (age > 18) {
+                alert(true);
+            } else {
+                alert('Родители разрешили?');
+            }
+        };
+
+        checkAge(19);
+
+        function getRas (v, t) {
+            let S = v * t; 
+            printRes(S);
+            return S;
+        };
+
+        function printRes (S) {
+            //Тернарный оператор
+            let word = S == 1 ? "Вы проедете: 1 километр" : "Вы проедете: " + S + " километров";
+            alert(word);
+        };
+
+        getRas(21, 3);
+
+
+    </script>
+</body>
+</html>
