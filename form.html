@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        
+        <form action="" method="" id="form">
+            <h1>Регистрация</h1>
+            <input class="input" type="text" name="name" placeholder="Имя*" id="name" required autofocus><br>
+            <input class="input" type="number" min="6" max="110" length="3" name="age" placeholder="Возраст*" id="age" required><br>
+            <input class="input" type="password" name="password" placeholder="Пароль*" id="password" required><br>
+            <button type="button" id="register">Зарегистрироваться</button>
+
+            <div class="error">*Ошибка! Заполните все поля!*</div>
+
+        </form>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
