@@ -6,10 +6,27 @@
     <title>Page</title>
 </head>
 <body>
+    <style>
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            color: blue;
+        }
+
+        a:hover {
+            color: #333;
+        }
+    </style>
     <h1>hello</h1>
 
+    <a href="form.html" target="_blank">Регистрация</a>
 
     <script type="text/javascript">
+
+        alert("Добро пожаловать на мою страницу!")
+        let name = prompt("Как тебя зовут?");
+        alert(`Привет ${name}`);
+        
         // let i = 10, 
         //     a = 20;
         
@@ -67,29 +84,29 @@
         // alert(x[0][1]);// Вывод второго элемента в первом массиве: 2
 
 
-        function checkAge (age) {
-            if (age > 18) {
-                alert(true);
-            } else {
-                alert('Родители разрешили?');
-            }
-        };
+        // function checkAge (age) {
+        //     if (age > 18) {
+        //         alert(true);
+        //     } else {
+        //         alert('Родители разрешили?');
+        //     }
+        // };
 
-        checkAge(19);
+        // checkAge(19);
 
-        function getRas (v, t) {
-            let S = v * t; 
-            printRes(S);
-            return S;
-        };
+        // function getRas (v, t) {
+        //     let S = v * t; 
+        //     printRes(S);
+        //     return S;
+        // };
 
-        function printRes (S) {
-            //Тернарный оператор
-            let word = S == 1 ? "Вы проедете: 1 километр" : "Вы проедете: " + S + " километров";
-            alert(word);
-        };
+        // function printRes (S) {
+        //     //Тернарный оператор
+        //     let word = S == 1 ? "Вы проедете: 1 километр" : "Вы проедете: " + S + " километров";
+        //     alert(word);
+        // };
 
-        getRas(21, 3);  
+        // getRas(21, 3);  
 
 
     </script>
